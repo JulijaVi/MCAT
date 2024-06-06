@@ -94,16 +94,44 @@
     <label for="category1">Sources</label>
     <input type="checkbox" id="category2" name="category" value="Topic Relevance">
     <label for="category2">Topic Relevance</label>
-    <input type="checkbox" id="category3" name="category" value="Inclusivity">
-    <label for="category3">Inclusivity</label>
-    <input type="checkbox" id="category4" name="category" value="Impartiality">
-    <label for="category4">Impartiality</label>
+    <input type="checkbox" id="category3" name="category" value="Impartiality">
+    <label for="category3">Impartiality</label>
+    <!-- Inclusivity Category with Subcategory Questions -->
+    <input type="checkbox" id="category4" name="category" value="Inclusivity" onclick="toggleInclusivitySubcategories()">
+    <label for="category4">Inclusivity</label>
+    <div id="inclusivitySubcategories" style="margin-left: 20px; display: none;">
+    <div id="inclusivitySubcategories" style="margin-left: 20px;">
+      <input type="checkbox" id="youthRepresentation" name="inclusivitySubcategory" value="Youth Representation">
+      <label for="youthRepresentation">Youth Representation</label>
+      <input type="checkbox" id="minorityVoices" name="inclusivitySubcategory" value="Inclusion of Minority Voices">
+      <label for="minorityVoices">Inclusion of Minority Voices</label>
+      <input type="checkbox" id="contentFormat" name="inclusivitySubcategory" value="Content Format">
+      <label for="contentFormat">Content Format</label>
+      <input type="checkbox" id="topicRelevance" name="inclusivitySubcategory" value="Topic Relevance">
+      <label for="topicRelevance">Topic Relevance</label>
+      <input type="checkbox" id="subjectMatterBias" name="inclusivitySubcategory" value="Subject Matter Bias">
+      <label for="subjectMatterBias">Subject Matter Bias</label>
+      <input type="checkbox" id="topicFocus" name="inclusivitySubcategory" value="Topic Focus">
+      <label for="topicFocus">Topic Focus</label>
+      <input type="checkbox" id="genderBiasLanguage" name="inclusivitySubcategory" value="Gender Bias in Language">
+      <label for="genderBiasLanguage">Gender Bias in Language</label>
   </fieldset>
 
   <!-- Analyze Content Button -->
   <button type="submit">Analyze Content</button>
 
 </form>
+<script>
+function toggleInclusivitySubcategories() {
+  var checkbox = document.getElementById('category4');
+  var subcategories = document.getElementById('inclusivitySubcategories');
 
+  if (checkbox.checked) {
+    subcategories.style.display = 'block';
+  } else {
+    subcategories.style.display = 'none';
+  }
+}
+</script>
 </body>
 </html>
