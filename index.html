@@ -7,42 +7,44 @@
 <style>
   body { 
     font-family: Arial, sans-serif; 
-    background-color: #FFFFFF; 
-    color: #0a2c2d; 
+    background-color: #ffffff; 
+    color: #075254; 
   }
   form { 
     max-width: 600px; 
     margin: 20px auto; 
-    background-color: #FFFFFF; 
+    background-color: #ffffff; 
     padding: 20px; 
     border-radius: 15px; 
+    border: 1px solid #d76427;
   }
   fieldset { 
-    border: 1px solid #23bec2; 
+    border: 1px solid #098b8e; 
     padding: 10px; 
     margin-bottom: 20px; 
   }
   legend { 
     padding: 0 10px; 
     font-weight: bold; 
-    color: #afd53b; 
+    color: #d76427; 
   }
   label { 
     display: block; 
     margin-top: 10px; 
-    color: #ff881f; 
+    color: #075254; 
   }
   input[type="url"], input[type="date"], textarea { 
     width: 100%; 
     padding: 8px; 
     margin-top: 5px; 
     border-radius: 5px; 
+    border: 1px solid #098b8e;
   }
   input[type="file"] { 
     margin-top: 5px; 
   }
   button { 
-    background-color: #23bec2; 
+    background-color: #99b83c; 
     color: white; 
     padding: 10px 15px; 
     border: none; 
@@ -50,7 +52,7 @@
     cursor: pointer; 
   }
   button:hover { 
-    background-color: #afd53b; 
+    background-color: #d76427; 
   }
 </style>
 </head>
@@ -60,7 +62,7 @@
 <form id="analysisForm">
 
   <fieldset>
-    <legend>Add content you want to analyze:</legend>
+    <legend>Content Analysis Options:</legend>
 
     <!-- Option 1: URL Input -->
     <label for="urlInput">Enter URL:</label>
