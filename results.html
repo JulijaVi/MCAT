@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analysis Results</title>
+<style>
+  body { 
+    font-family: Arial, sans-serif; 
+    background-color: #ffffff; 
+    color: #075254; 
+  }
+  .results { 
+    max-width: 600px; 
+    margin: 20px auto; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 15px; 
+    border: 1px solid #d76427;
+  }
+  h2 { 
+    color: #d76427; 
+  }
+  p { 
+    color: #075254; 
+  }
+</style>
+</head>
+<body>
+<h1>Media Content Analysis Results</h1>
+
+<div class="results">
+  <h2>Youth Representation</h2>
+  <p>Score: <span id="youthRepresentationScore"></span></p>
+
+  <h2>Inclusion of Minority Voices</h2>
+  <p>Score: <span id="minorityVoicesScore"></span></p>
+
+  <h2>Content Format</h2>
+  <p>Score: <span id="contentFormatScore"></span></p>
+
+  <h2>Topic Relevance</h2>
+  <p>Score: <span id="topicRelevanceScore"></span></p>
+
+  <h2>Subject Matter Bias</h2>
+  <p>Score: <span id="subjectMatterBiasScore"></span></p>
+
+  <h2>Topic Focus</h2>
+  <p>Score: <span id="topicFocusScore"></span></p>
+
+  <h2>Gender Bias in Language</h2>
+  <p>Score: <span id="genderBiasLanguageScore"></span></p>
+</div>
+
+<script>
+  // Here you would update the score elements with the actual scores
+  // For example:
+  document.getElementById('youthRepresentationScore').textContent = 1;
+  document.getElementById('minorityVoicesScore').textContent = 0;
+  document.getElementById('contentFormatScore').textContent = 1;
+  document.getElementById('topicRelevanceScore').textContent = 1;
+  document.getElementById('subjectMatterBiasScore').textContent = 0;
+  document.getElementById('topicFocusScore').textContent = 1;
+  document.getElementById('genderBiasLanguageScore').textContent = 1;
+</script>
+
+</body>
+</html>
