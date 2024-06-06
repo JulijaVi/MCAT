@@ -2,10 +2,13 @@ import re
 import nltk
 nltk.download('punkt')
 from nltk.tokenize import word_tokenize
+from flask import Flask, request
+app = Flask(__name__)
 
-# Get the text content
-textContent = """
-Paste your article content here
+@app.route('/analyze', methods=['POST'])
+def analyze():
+    # Get the text content from the form submission
+    textContent = request.form.get('textContent')
 """
 
 # Initialize the score
@@ -37,4 +40,7 @@ score += not masculinePronouns
 score += collectiveNouns
 
 # Output the score
-print('The total score for inclusivity and representation is:', score)
+    return 'The total score for inclusivity and representation is: ' + str(score)
+
+if __name__ == '__main__':
+    app.run()
